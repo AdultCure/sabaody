@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS User(
+    ID INT NOT NULL UNIQUE AUTO_INCREMENT,
+    NameOf VARCHAR (255),
+    Email varchar (255) NOT NULL,
+    Password varchar (255) NOT NULL
+)

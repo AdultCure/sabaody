@@ -1,8 +1,13 @@
 How to run it?
 
 1. Start docker container with Database:
-   docker run --name sabaody -e MYSQL_ROOT_PASSWORD=root -d mysql:latest
+   docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=root -e -d mysql:latest
 2. Migration
 3. Run app
 4. Make fun ;0
 
+Логика первого этапа.
+Личный сайт с возможностью связи (форма). Админка для просмотра информации по 
+пользователям которые оставили заявки. Просмотр логов сайта, метрик и кол-во посещение, 
+так же отображение на карте (Grafana?) зоны подключения пользователя.
+Добавление админов и наличие суперадмина. Сессии.
